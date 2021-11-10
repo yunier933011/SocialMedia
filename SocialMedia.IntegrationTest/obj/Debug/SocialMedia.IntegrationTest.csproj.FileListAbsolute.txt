@@ -1,0 +1,14 @@
+C:\Users\Yunier\source\repos\SocialMedia\SocialMedia.IntegrationTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Yunier\source\repos\SocialMedia\SocialMedia.IntegrationTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Yunier\source\repos\SocialMedia\SocialMedia.IntegrationTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Yunier\source\repos\SocialMedia\SocialMedia.IntegrationTest\bin\Debug\SocialMedia.IntegrationTest.dll
+C:\Users\Yunier\source\repos\SocialMedia\SocialMedia.IntegrationTest\bin\Debug\SocialMedia.IntegrationTest.pdb
+C:\Users\Yunier\source\repos\SocialMedia\SocialMedia.IntegrationTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Yunier\source\repos\SocialMedia\SocialMedia.IntegrationTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Yunier\source\repos\SocialMedia\SocialMedia.IntegrationTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Yunier\source\repos\SocialMedia\SocialMedia.IntegrationTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Yunier\source\repos\SocialMedia\SocialMedia.IntegrationTest\obj\Debug\SocialMedia.IntegrationTest.csprojAssemblyReference.cache
+C:\Users\Yunier\source\repos\SocialMedia\SocialMedia.IntegrationTest\obj\Debug\SocialMedia.IntegrationTest.csproj.CoreCompileInputs.cache
+C:\Users\Yunier\source\repos\SocialMedia\SocialMedia.IntegrationTest\obj\Debug\SocialMedia.IntegrationTest.csproj.CopyComplete
+C:\Users\Yunier\source\repos\SocialMedia\SocialMedia.IntegrationTest\obj\Debug\SocialMedia.IntegrationTest.dll
+C:\Users\Yunier\source\repos\SocialMedia\SocialMedia.IntegrationTest\obj\Debug\SocialMedia.IntegrationTest.pdb
