@@ -17,6 +17,12 @@ namespace SocialMedia.Infrastructure.Repositories
         {
             _context = socialMediaContext;
         }
+
+        public Task<Post> GetPost(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<IEnumerable<Post>> GetPosts()
         {
             var posts = await _context.Posts.Where( x => x.UserId == 17).ToListAsync();
