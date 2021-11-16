@@ -63,3 +63,11 @@ C:\Users\Yunier\source\repos\SocialMedia\SocialMedia.Api\bin\Debug\netcoreapp3.1
 C:\Users\Yunier\source\repos\SocialMedia\SocialMedia.Api\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Yunier\source\repos\SocialMedia\SocialMedia.Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Yunier\source\repos\SocialMedia\SocialMedia.Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Yunier\source\repos\SocialMedia\SocialMedia.Api\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\Yunier\source\repos\SocialMedia\SocialMedia.Api\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Yunier\source\repos\SocialMedia\SocialMedia.Api\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Yunier\source\repos\SocialMedia\SocialMedia.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Yunier\source\repos\SocialMedia\SocialMedia.Api\obj\Debug\netcoreapp3.1\SocialMedia.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Yunier\source\repos\SocialMedia\SocialMedia.Api\bin\Debug\netcoreapp3.1\FluentValidation.dll
+C:\Users\Yunier\source\repos\SocialMedia\SocialMedia.Api\bin\Debug\netcoreapp3.1\FluentValidation.AspNetCore.dll
+C:\Users\Yunier\source\repos\SocialMedia\SocialMedia.Api\bin\Debug\netcoreapp3.1\FluentValidation.DependencyInjectionExtensions.dll

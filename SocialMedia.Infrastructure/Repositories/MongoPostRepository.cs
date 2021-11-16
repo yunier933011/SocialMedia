@@ -28,5 +28,10 @@ namespace SocialMedia.Infrastructure.Repositories
             var posts = await _context.Posts.Where( x => x.UserId == 17).ToListAsync();
             return posts;
         }
+
+        public Task InsertPost(Post post)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
