@@ -26,7 +26,7 @@ namespace SocialMedia.Infrastructure.Data.Configurations
                         .IsUnicode(false);
 
             builder.Property(e => e.DateOfBirth)
-                        .HasColumnName("FechaDeNacimiento")
+                        .HasColumnName("FechaNacimiento")
                         .HasColumnType("date");
 
             builder.Property(e => e.FirstName)
