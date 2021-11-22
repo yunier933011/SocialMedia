@@ -43,9 +43,8 @@ namespace SocialMedia.Api
             );
 
             services.AddTransient<IPostService, PostService>();
-            services.AddTransient<IPostRepository, PostRepository>();
-            //services.AddTransient<IUserService, UserService>();
-            services.AddTransient<IUserRepository, UserRepository>();
+            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            services.AddScoped<IUnitOfWork, IUnitOfWork>();
 
             //To enable ValidationFilter global level instead of [ApiController]           
             services.AddMvc(options =>

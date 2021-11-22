@@ -9,27 +9,25 @@ namespace SocialMedia.Core.Services
 {
     public class PostService : IPostService
     {
-        private readonly IPostRepository _postRepository;
-        private readonly IUserRepository _userRepository;
+        private readonly IUnitOfWork _unitofwork;
 
-        public PostService(IPostRepository postRepository, IUserRepository userRepository)
+        public PostService(IUnitOfWork unitofwork)
         {
-            _postRepository = postRepository;
-            _userRepository = userRepository;
+            _unitofwork = unitofwork;
         }
         public async Task<Post> GetPost(int id)
         {
-            return await _postRepository.GetPost(id);
+            return await _unitofwork.PostRepository.GetById(id);
         }
 
         public async Task<IEnumerable<Post>> GetPosts()
         {
-            return await _postRepository.GetPosts();
+            return await _unitofwork.PostRepository.GetAll();
         }
 
         public async Task InsertPost(Post post)
         {
-            var user = await _userRepository.GetUser(post.UserId);
+            var user = await _unitofwork.UserRepository.GetById(post.UserId);
             if (user == null)
             {
                 throw new Exception("User doesn't exist");
@@ -38,17 +36,19 @@ namespace SocialMedia.Core.Services
             {
                 throw new Exception("Invalid word");
             }
-            await _postRepository.InsertPost(post);
+            await _unitofwork.PostRepository.Insert(post);
         }
 
         public async Task<bool> UpdatePost(Post post)
         {
-            return await _postRepository.UpdatePost(post);
+            await _unitofwork.PostRepository.Update(post);
+            return true;
         }
 
         public async Task<bool> DeletePost(int id)
         {
-            return await _postRepository.DeletePost(id);
+            await _unitofwork.PostRepository.Delete(id);
+            return true;
         }
     }
 }
