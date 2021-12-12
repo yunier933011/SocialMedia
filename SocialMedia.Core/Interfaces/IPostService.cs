@@ -8,7 +8,7 @@ namespace SocialMedia.Core.Interfaces
     {
         Task<bool> DeletePost(int id);
         Task<Post> GetPost(int id);
-        Task<IEnumerable<Post>> GetPosts();
+        IEnumerable<Post> GetPosts();
         Task InsertPost(Post post);
         Task<bool> UpdatePost(Post post);
     }

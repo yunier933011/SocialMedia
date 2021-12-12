@@ -8,24 +8,22 @@ using System.Threading.Tasks;
 
 namespace SocialMedia.Infrastructure.Repositories
 {
-    class UnitOfWork : IUnitOfWork
+    public class UnitOfWork : IUnitOfWork
     {
         private readonly SocialMediaContext _context;
-        private readonly IRepository<Post> _postRepository;
+        private readonly IPostRepository _postRepository;
         private readonly IRepository<Comment> _commentRepository;
         private readonly IRepository<User> _userRepository;
-        public UnitOfWork(SocialMediaContext context, IRepository<Post> postRepository, IRepository<Comment> commentRepository, IRepository<User> userRepository)
+        public UnitOfWork(SocialMediaContext context)
         {
             _context = context;
-            _postRepository = postRepository;
-            _commentRepository = commentRepository;
-            _userRepository = userRepository;
         }
-        public IRepository<Post> PostRepository => _postRepository ?? new Repository<Post>(_context);
+        public IPostRepository PostRepository => _postRepository ?? new PostRepository(_context);
 
         public IRepository<User> UserRepository => _userRepository ?? new Repository<User>(_context);
 
         public IRepository<Comment> CommentRepository => _commentRepository ?? new Repository<Comment>(_context);
+
 
         public void Dispose()
         {
