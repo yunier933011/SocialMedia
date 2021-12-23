@@ -33,7 +33,10 @@ namespace SocialMedia.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-            services.AddControllers().ConfigureApiBehaviorOptions(options =>
+            services.AddControllers(option =>
+            {
+                option.Filters.Add<GlobalExceptionFilter>();
+            }).ConfigureApiBehaviorOptions(options =>
             {
                 //options.SuppressModelStateInvalidFilter = true;
             });
@@ -44,7 +47,7 @@ namespace SocialMedia.Api
 
             services.AddTransient<IPostService, PostService>();
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
-            services.AddScoped<IUnitOfWork, IUnitOfWork>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             //To enable ValidationFilter global level instead of [ApiController]           
             services.AddMvc(options =>
